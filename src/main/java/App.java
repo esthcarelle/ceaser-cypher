@@ -26,12 +26,12 @@ public class App {
                 String intLength = myObj.nextLine();
                 int n = Integer.parseInt(intLength);
 
-
                 if (decryptOrEncrypt.equals("encrypt")) {
                     Encrypt myStringToEncrypt = new Encrypt(inputtedStringInChar, n);
                     myStringEncrypted = myStringToEncrypt.EncryptInput();
                     System.out.println("Your encrypted  string is:"+ myStringEncrypted);
-                } else if (decryptOrEncrypt.equals("decrypt")) {
+                }
+                else if (decryptOrEncrypt.equals("decrypt")) {
                     Decrypt myStringToDecrypt = new Decrypt(inputtedStringInChar, n);
                     myStringEncrypted = myStringToDecrypt.DecryptInput();
                     System.out.println("Your decrypted string is:"+ myStringEncrypted);
@@ -53,9 +53,6 @@ public class App {
 
 
     }
-
-
-
 
 
     }
