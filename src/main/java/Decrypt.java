@@ -42,11 +42,11 @@ public class Decrypt {
             }
 
         }
-        String aa=new String(answerInChar);
+        String answerReturned=new String(answerInChar);
 
 
 
-        return (aa);
+        return (answerReturned);
     }
 
 }
