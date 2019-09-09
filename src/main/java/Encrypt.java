@@ -43,9 +43,7 @@ public class Encrypt {
             }
 
         }
-        String answerReturned=new String(answerInChar);
-
-
+            String answerReturned=new String(answerInChar);
 
             return (answerReturned);
         }
