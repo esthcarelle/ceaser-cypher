@@ -1,13 +1,16 @@
 # Caesar cipher
+## made by Esther Carrelle
 
-This is a simple Sinatra application which you can use to encrypt or decrypt a piece of text. [Demo](https://ca3sar-ciph3r.mariozugaj.com)
+
+This is a simple java application which you can use to encrypt or decrypt a piece of text. 
 
 ##### What is Caesar cipher?
 
 
 
 In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift cipher, Caesar's code or Caesar shift, is one of the simplest and most widely known encryption techniques. It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter some fixed number of positions down the alphabet. For example, with a left shift of 3, D would be replaced by A, E would become B, and so on. The method is named after Julius Caesar, who used it in his private correspondence.
-
+##Known  Bugs
+There is no none bugs in this app
 
 ### BDD:
 
@@ -19,8 +22,16 @@ In cryptography, a Caesar cipher, also known as Caesar's cipher, the shift ciphe
 * Enter the key
 * Enjoy seeing your sentence encrypted or decrypted
 
+##  Screenshots
+![decryption](src/decryption.png)
+![encryption](src/encryption.png)
+![exit](src/exit.png)
 
-### Technical notes
+
+### Technology used
 
 * Written in java using IntelliJ
-
+##  Support and contact details
+ Esthcarelle@gmail.com
+## Licence
+copyright @2019 Esther carrelle
