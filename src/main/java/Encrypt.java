@@ -10,9 +10,6 @@ public class Encrypt {
         this.inputtedString = inputtedString;
         this.inputtedPosition=inputtedPosition;
 
-
-
-
     }
 
     public char[] getInputtedString() {
