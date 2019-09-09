@@ -30,7 +30,6 @@ public class Encrypt {
                 if (inputtedString[i] == alphabet[j]) {
                     key = j;
                     key = (key + inputtedPosition)%26;
-
                     answerInChar[i] = alphabet[key];
 
                 }
