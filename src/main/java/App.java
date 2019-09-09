@@ -6,10 +6,8 @@ public class App {
         char[] inputtedStringInChar;
         boolean programRunning = true;
         while(programRunning) {
-
             Scanner myObj = new Scanner(System.in);
             String myStringEncrypted = new String();
-
             System.out.println("Enter the plaintext please");
 
             String stringLength = myObj.nextLine();
