@@ -42,8 +42,6 @@ public class Decrypt {
         }
         String answerReturned=new String(answerInChar);
 
-
-
         return (answerReturned);
     }
 
