@@ -4,11 +4,15 @@ import static org.junit.Assert.*;
 
 public class EncryptTest {
     @Test
-    public void RunEncrypt_ToChar_Char() {
-        Encrypt inputtedString=new Encrypt(new char[]{'h', 'i'},2);
-        char[] hi={'h','i'};
-        assertEquals(hi, inputtedString);
+    public void getChar_getsInputtedChar_hi() {
+       Encrypt testEncrypt = new Encrypt(new char[]{'h', 'i'}, 2);
+        assertEquals(new char[]{'h', 'i'}, testEncrypt.getInputtedString());
+    }
 
+    @Test
+    public void getChar_getsInputtedKey_2() {
+        Encrypt testEncrypt = new Encrypt(new char[]{'h', 'i'}, 2);
+        assertEquals(2, testEncrypt.getInputtedPosition());
     }
 
     @Test
@@ -16,6 +20,6 @@ public class EncryptTest {
         Encrypt inputtedString=new Encrypt(new char[]{'h', 'i'},2);
         assertEquals("jk",inputtedString.EncryptInput());
     }
-    @Test
-    public void
+
+
 }
