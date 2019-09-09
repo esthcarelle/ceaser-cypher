@@ -8,7 +8,7 @@ public class App {
         while(programRunning) {
             Scanner myObj = new Scanner(System.in);
             String myStringEncrypted = new String();
-            System.out.println("Welcome to your encryption and decryption app!!Please follow instructions");
+            System.out.println("Welcome to your encryption and decryption app!!Please follow these instructions");
             System.out.println("Do you want to decrypt or encrypt?Write encrypt if you want to encrypt , decrypt for decrypting and exit for exiting");
             String decryptOrEncrypt = myObj.nextLine();
             if(decryptOrEncrypt.equals("exit")){
