@@ -19,7 +19,8 @@ public class Encrypt {
         return this.inputtedString;
     }
 
-    public int getInputtedPosition() {
+    public int getInputtedPosition()
+    {
         return this.inputtedPosition;
     }
 

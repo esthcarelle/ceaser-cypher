@@ -28,8 +28,8 @@ public class App {
             System.out.println(myStringEncrypted);
         }
        else if(decryptOrEncrypt.equals("decrypt")){
-            Decrypt myStringToDecrypt=new Decrypt(stringLength);
-            myStringEncrypted=myStringToDecrypt.DecryptInput(inputtedStringInChar,n);
+            Decrypt myStringToDecrypt=new Decrypt(inputtedStringInChar,n);
+            myStringEncrypted=myStringToDecrypt.DecryptInput();
             System.out.println(myStringEncrypted);
         }
        else

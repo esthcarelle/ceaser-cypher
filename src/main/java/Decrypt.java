@@ -1,35 +1,39 @@
 public class Decrypt {
-    private char[] inputtedStringInChar;
+    private char[] inputtedString;
     private char[] alphabet = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
-    private String inputtedString;
-    private int i, j,key,l, outputNumber;
+
+    private int i, j,key,inputtedPosition, outputNumber;
     private char[] answerInChar=new char[100];
 
 
-    public Decrypt(String inputtedString) {
+    public Decrypt(char[] inputtedString,int inputtedPosition) {
         this.inputtedString = inputtedString;
-
+        this.inputtedPosition=inputtedPosition;
 
     }
 
-    public char[] ChangeIntoChar() {
-        inputtedStringInChar = inputtedString.toCharArray();
-        return inputtedStringInChar;
+    public char[] getInputtedString() {
+        return this.inputtedString;
     }
 
-    public String DecryptInput(char[] inputtedStringInChar,int n) {
+    public int getInputtedPosition()
+    {
+        return this.inputtedPosition;
+    }
 
-        for (i = 0; i < inputtedStringInChar.length; i++) {
+    public String DecryptInput() {
+
+        for (i = 0; i < inputtedString.length; i++) {
 
             for (j = 0; j < alphabet.length; j++) {
-                if (inputtedStringInChar[i] == alphabet[j]) {
+                if (inputtedString[i] == alphabet[j]) {
                     key = j;
-                    key = (key - n)%26;
+                    key = (key - inputtedPosition)%26;
 
                     answerInChar[i] = alphabet[key];
 
                 }
-                else if(inputtedStringInChar[i]==' ') {
+                else if(inputtedString[i]==' ') {
                     answerInChar[i]= ' ';
 
                 }
