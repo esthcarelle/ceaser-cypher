@@ -8,14 +8,17 @@ public class App {
         while(programRunning) {
             Scanner myObj = new Scanner(System.in);
             String myStringEncrypted = new String();
-            System.out.println("Enter the plaintext please");
 
+            System.out.println("Do you want to decrypt or encrypt?Write encrypt if you want to encrypt , decrypt for decrypting and exit for exiting");
+            String decryptOrEncrypt = myObj.nextLine();
+            if(decryptOrEncrypt.equals("exit")){
+                programRunning=false;
+            }
+            System.out.println("Enter the plaintext please");
             String stringLength = myObj.nextLine();
             String stringToLower = stringLength.toLowerCase();
             inputtedStringInChar = stringToLower.toCharArray();
-            System.out.println("Do you want to decrypt or encrypt?Write encrypt if you want to encrypt , decrypt for decrypting and exit for exiting");
-            String decryptOrEncrypt = myObj.nextLine();
-            System.out.println(decryptOrEncrypt);
+
             System.out.println("Enter the key please");
             String intLength = myObj.nextLine();
             int n = Integer.parseInt(intLength);
