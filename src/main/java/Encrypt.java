@@ -2,7 +2,7 @@ public class Encrypt {
 
     private char[] alphabet = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
     private char[] inputtedString;
-    private int i, j,key,inputtedPosition, outputNumber;
+    private int i, j,key,inputtedPosition;
     private char[] answerInChar=new char[1000];
 
     public Encrypt(char [] inputtedString,int inputtedPosition) {
